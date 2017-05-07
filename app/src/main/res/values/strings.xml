@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Control Life</string>
+    <string name="login_txtUsuario">Nome do Usuário:</string>
+    <string name="sexo_txtSexo">Sexo:</string>
+    <string name="app_nomeLogin">TelaLogin</string>
+    <string name="usuario">Usuario</string>
+    <string name="senha">Senha</string>
+    <string name="acessar">Acessar</string>
+    <string name="novoCadastro">Novo Cadastro</string>
+    <string name="textView">NOME APP</string>
+    <string name="title_activity_menu">Escolha a ação</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Configurações</string>
+</resources>

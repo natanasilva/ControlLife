@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="br.com.diegosouza.controllife.CadMedicacaoActivity">
+
+
+    <TextView
+    android:id="@+id/text_desc_medicamento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Descrição do Medicamento:" />
+
+    <EditText
+        android:id="@+id/descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição do medicamento"
+        android:layout_below="@+id/text_desc_medicamento"/>
+    <TextView
+        android:id="@+id/text_periodicidade_medicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Periodicidade:"
+        android:layout_below="@+id/descricao"/>
+
+    <EditText
+        android:id="@+id/periodicidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exemplo: 2x ao dia"
+        android:layout_below="@+id/text_periodicidade_medicamento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/text_horarios_medicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horarios:"
+        android:layout_below="@+id/periodicidade"/>
+
+    <EditText
+        android:id="@+id/horarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exemplo: 7:00; 19:00"
+        android:layout_below="@+id/text_horarios_medicamento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/text_obs_medicamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observação:"
+        android:layout_below="@+id/horarios"/>
+
+    <EditText
+        android:id="@+id/observacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Exemplo: Duas doses"
+        android:layout_below="@+id/text_obs_medicamento"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="CADASTRAR"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="16dp" />
+</RelativeLayout>
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.diegosouza.controllife.CadUsuarioActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/login_txtUsuario"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/textNome" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Digite o nome"
+            android:id="@+id/editNome" />
+
+        <TextView
+            android:text="@string/sexo_txtSexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/editSexo" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:text="Masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdbMas"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:text="Feminino"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:id="@+id/rdbFem" />
+
+        </RadioGroup>
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:id="@+id/datePicker"
+            android:layout_weight="0.63" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario:"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:id="@+id/textLogin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Cadastre novo usuario"
+            android:id="@+id/tLogin" />
+        <TextView
+            android:text="Senha:"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:id="@+id/tNovaSenha" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Cadastre Nova Senha"
+            android:id="@+id/editText4" />
+
+        <Button
+            android:text="Cadastrar Novo Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="#999"
+            android:textColor="#ffffff"
+            android:id="@+id/btAcessar" />
+
+    </LinearLayout>
+</RelativeLayout>
